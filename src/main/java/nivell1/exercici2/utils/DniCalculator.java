@@ -2,7 +2,7 @@ package nivell1.exercici2.utils;
 
 public class DniCalculator {
 
-    final private String DNI_LETTERS = "TRWAGMYFPDXBNJZSQVHLCKE";
+    final static private String DNI_LETTERS = "TRWAGMYFPDXBNJZSQVHLCKE";
 
     public String calculateDniLetter(String dniStringNumber) {
 

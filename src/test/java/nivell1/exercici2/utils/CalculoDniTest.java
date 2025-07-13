@@ -18,6 +18,7 @@ public class CalculoDniTest {
             "00000005, 00000005M",
             "00000006, 00000006Y",
             "00000007, 00000007F",
+            "00000008, 00000008P",
 
     })
     public void testDniLetters(String dniNumber, String expectedResult) {

@@ -7,7 +7,8 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class OptionalEmptyTest {
 
     @Test
-    public void optionalIsEmpty() {
+    public void givenEmptyOptional_whenChecked_thenItIsEmpty() {
+
         OptionalEmpty optionalEmpty = new OptionalEmpty();
 
         assertThat(optionalEmpty.getEmptyOptional()).isEmpty();

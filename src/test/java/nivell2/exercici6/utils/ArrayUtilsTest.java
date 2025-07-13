@@ -7,11 +7,13 @@ import static org.assertj.core.api.Assertions.*;
 public class ArrayUtilsTest {
 
     @Test
-    public void testIndexOutOfBoundsException() {
+    public void givenArray_whenAccessingInvalidIndex_thenThrowsIndexOutOfBoundsException() {
+
         ArrayUtils arrayManagment = new ArrayUtils();
+
         int[] array1 = {1, 2, 3, 4};
 
         assertThatThrownBy(() -> arrayManagment.getElementAtIndex(array1, 4))
-                .isInstanceOf(IndexOutOfBoundsException.class);
+                .isInstanceOf(ArrayIndexOutOfBoundsException.class);
     }
 }

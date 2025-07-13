@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.*;
 public class MapClassTest {
 
     @Test
-    public void mapContainsGivenKey() {
+    public void givenMapWithValues_whenCheckingForSpecificKey_thenItIsPresent() {
 
         MapClass nameAgeMap = new MapClass();
         nameAgeMap.enterValues("Joan", 32);
